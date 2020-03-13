@@ -4,7 +4,7 @@ This repo contains a few examples for processing [ATLAS](https://atlas.cern/) xA
 
 ## What information is in an xAOD file
 
-The [ATLAS Analysis Release](https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/) provides a handy Python [checkxAOD.py](https://atlassoftwaredocs.web.cern.ch/ABtutorial/basic_xaod_content/) that we can use to learn the container types and container keys in a xAOD file.
+The [ATLAS Analysis Release](https://atlassoftwaredocs.web.cern.ch/ABtutorial/release_setup/) provides a handy Python [checkxAOD.py](https://atlassoftwaredocs.web.cern.ch/ABtutorial/basic_xaod_content/) that we can use to learn the container types and container keys in an xAOD file.
 
 First, set up the environment for ATLAS Analysis 
 
