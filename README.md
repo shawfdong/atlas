@@ -1,4 +1,4 @@
-# atlas
+# ATLAS examples
 
 This repo contains a few examples for processing [ATLAS](https://atlas.cern/) xAOD data.
 
@@ -100,4 +100,4 @@ Total,InDet,*Unknown*,Trig,egamma,Muon,Jet,MET,BTag,tau,EvtId,PFO
 
 In this case, for example, `AntiKt4LCTopoJets` is a *key name* for the container whose type is `DataVector<xAOD::Jet_v1>`. Once you know the container types, you can find their APIs at [RootCore APIs site](http://hep.uchicago.edu/~kkrizka/rootcoreapis/dd/d44/namespacexAOD.html). 
 
-In your analysis, you choose the key name for the particular instance of that container you are interested in (e.g., `AntiKt4LCTopoJets`). **Note** xAOD APIs are higher-level APIs, they hide away some behind-the-scenes magic, which is actually saved in the Auxiliary store of the raw Root file. However, as of this writing, one can access the xAOD APIs in [C++](https://github.com/shawfdong/atlas/blob/master/Exam_JetsPlot.cxx] or [pyROOT](https://github.com/shawfdong/atlas/blob/master/pyROOT_example.ipynb) code, but not in [uproot](https://github.com/scikit-hep/uproot) code yet. Until someone implements xAOD support for uproot, one would have to read the raw data from the Auxiliary store (for an example, see [convert_specific_variables.py](https://github.com/shawfdong/atlas/blob/master/convert_specific_variables.py).    
+In your analysis, you choose the key name for the particular instance of the container in which you are interested (e.g., `AntiKt4LCTopoJets`). **Note** xAOD APIs are higher-level APIs, and they hide some behind-the-scenes magic, which is actually saved in the Auxiliary store of the raw Root file. However, as of this writing, you can access the xAOD APIs in C++ (e.g., [Exam_JetsPlot.cxx](https://github.com/shawfdong/atlas/blob/master/Exam_JetsPlot.cxx]) or pyROOT (e.g., [pyROOT_example.ipynb](https://github.com/shawfdong/atlas/blob/master/pyROOT_example.ipynb)) code, but not in [uproot](https://github.com/scikit-hep/uproot) code yet. Until someone implements xAOD support for uproot, you will have to read the raw data from the Auxiliary store (for an example, see [convert_specific_variables.py](https://github.com/shawfdong/atlas/blob/master/convert_specific_variables.py).    
